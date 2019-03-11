@@ -30,7 +30,7 @@ class Counter extends Component {
         </h1>
         <button onClick={this.increment}>+1</button>
         <button onClick={this.decrement}>-1</button>
-        <button onClick={this.reset}>Reset</button>
+        <button onClick={this.reset}>重置</button>
       </div>
     )
   }
