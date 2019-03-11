@@ -4,8 +4,8 @@
   "license": "ISC",
   "scripts": {
     "dev": "next",
-    "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "build": "next build"
   },
   "dependencies": {
     "es6-promise": "4.1.1",
