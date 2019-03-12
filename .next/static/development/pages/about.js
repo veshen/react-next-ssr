@@ -14754,7 +14754,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fabout&absolutePagePath=%2FUsers%2Fwangwei%2FDocuments%2Fssr-project%2Freact-next-ssr%2Fpages%2Fabout.js ***!
   \******************************************************************************************************************************************************/
@@ -14777,5 +14777,5 @@ module.exports = dll_9d2e7eb3ce4bb71fa337;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]));;
+},[[3,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=about.js.map

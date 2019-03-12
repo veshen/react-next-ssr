@@ -171,6 +171,209 @@ function tickClock(isServer) {
 
 /***/ }),
 
+/***/ "./axios/config.js":
+/*!*************************!*\
+  !*** ./axios/config.js ***!
+  \*************************/
+/*! exports provided: INDEX_LIST */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "INDEX_LIST", function() { return INDEX_LIST; });
+//easy-mock模拟数据接口地址
+// PRODUCTION
+// const HOST                         = 'https://kk.sa-green.cn/';
+// test
+var HOST = 'http://qa-admin.hxihuyu.com/';
+/*
+    common
+*/
+//获取首页列表
+
+var INDEX_LIST = HOST + 'bbs/bbsposts/getPostsListByIsHandpick?size=20&current=1&isHandpick=1';
+
+/***/ }),
+
+/***/ "./axios/index.js":
+/*!************************!*\
+  !*** ./axios/index.js ***!
+  \************************/
+/*! exports provided: getIndexList */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getIndexList", function() { return getIndexList; });
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "axios");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _tools__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tools */ "./axios/tools.js");
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./config */ "./axios/config.js");
+
+
+
+axios__WEBPACK_IMPORTED_MODULE_0___default.a.defaults.withCredentials = true;
+/*
+    common
+*/
+
+var getIndexList = function getIndexList(data) {
+  return Object(_tools__WEBPACK_IMPORTED_MODULE_1__["get"])({
+    url: _config__WEBPACK_IMPORTED_MODULE_2__["INDEX_LIST"],
+    data: data
+  });
+}; //首页大盘 豆腐块
+// export const deldteEventStatus = (data) => post({url: config.DELDTE_EVENT_STATUS,data});//删除反馈列表
+// export const exportOrderQueryList = (data) => postExport({
+//     url: config.ORDER_LIST_EXPORT,
+//     data
+// }); //订单查询查询导出
+//
+// export const exportOrderQueryInterval = (data) => postExport({
+//     url: config.ORDER_INTERVAL_EXPORT,
+//     data
+// }); //订单查询查询导出
+
+/***/ }),
+
+/***/ "./axios/tools.js":
+/*!************************!*\
+  !*** ./axios/tools.js ***!
+  \************************/
+/*! exports provided: get, post, postExport */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "get", function() { return get; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "post", function() { return post; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "postExport", function() { return postExport; });
+/* harmony import */ var _babel_runtime_corejs2_core_js_promise__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/promise */ "./node_modules/@babel/runtime-corejs2/core-js/promise.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_promise__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_promise__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "axios");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+
+ // import { message, notification } from 'antd';
+
+/**
+ * 公用get请求
+ * @param url       接口地址
+ * @param msg       接口异常提示
+ * @param headers   接口所需header配置
+ */
+
+var get = function get(_ref) {
+  var url = _ref.url,
+      _ref$params = _ref.params,
+      params = _ref$params === void 0 ? {} : _ref$params,
+      _ref$restParams = _ref.restParams,
+      restParams = _ref$restParams === void 0 ? {} : _ref$restParams,
+      _ref$msg = _ref.msg,
+      msg = _ref$msg === void 0 ? '系统异常' : _ref$msg,
+      headers = _ref.headers;
+  return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(_urlMixPram(restParams, url), {
+    params: params
+  }, headers).then(function (res) {
+    return res.data;
+  }).catch(function (err) {
+    console.log(err); // message.warn(msg);
+    // notification.warn({
+    //      message: msg,
+    //      className : 'react-no-print'
+    // })
+  });
+}; //function
+
+function _urlMixPram(parm, url) {
+  var _url = url;
+
+  for (var i in parm) {
+    _url = _url.replace('{' + i + '}', parm[i]);
+  }
+
+  return _url;
+}
+/**
+ * 公用post请求
+ * @param url       接口地址
+ * @param data      接口参数
+ * @param msg       接口异常提示
+ * @param headers   接口所需header配置
+ */
+
+
+var post = function post(_ref2) {
+  var url = _ref2.url,
+      data = _ref2.data,
+      _ref2$msg = _ref2.msg,
+      msg = _ref2$msg === void 0 ? '接口异常' : _ref2$msg,
+      headers = _ref2.headers;
+  return axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(url, data, headers).then(function (res) {
+    return res.data;
+  }).catch(function (err) {
+    console.log(err); // message.warn(msg);
+  });
+};
+/**
+ * 公用文件导出form请求
+ * @param url       接口地址
+ * @param data      接口参数
+ */
+
+var postExport = function postExport(_ref3) {
+  var url = _ref3.url,
+      data = _ref3.data;
+  return new _babel_runtime_corejs2_core_js_promise__WEBPACK_IMPORTED_MODULE_0___default.a(function (resolve, reject) {
+    window.open(markUrl(url, data));
+    return;
+    var iframe = document.createElement("iframe");
+    iframe.setAttribute('id', 'iframe_display');
+    iframe.setAttribute('name', 'iframe_display');
+    iframe.setAttribute('style', 'display:none');
+    document.querySelector('.container').appendChild(iframe);
+    var form = document.createElement("form");
+    form.setAttribute('id', 'form1123');
+    form.setAttribute('target', 'iframe_display');
+    form.setAttribute('method', 'post');
+    form.setAttribute('action', markUrl(url, data));
+    document.querySelector('.container').appendChild(form);
+    form.submit();
+    form.remove();
+    var parent = document.querySelector('.container');
+    var iframe1 = document.getElementById("iframe_display");
+    setTimeout(function () {
+      resolve({
+        code: 200
+      });
+      removeElement(iframe1);
+    }, 300000);
+  });
+};
+
+function removeElement(_element) {
+  var _parentElement = _element.parentNode;
+
+  if (_parentElement) {
+    _parentElement.removeChild(_element);
+  }
+}
+
+function markUrl(link, data) {
+  if (typeof data != "undefined" && data != "") {
+    var paramArr = [];
+
+    for (var attr in data) {
+      paramArr.push(attr + '=' + data[attr]);
+    }
+
+    link += '?' + paramArr.join('&');
+  }
+
+  return link;
+}
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/array/from.js":
 /*!*******************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/array/from.js ***!
@@ -1953,7 +2156,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var es6_promise__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(es6_promise__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _actions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./actions */ "./actions.js");
+/* harmony import */ var _axios_index__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./axios/index */ "./axios/index.js");
+/* harmony import */ var _actions__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./actions */ "./actions.js");
 
 
 var _marked =
@@ -1964,9 +2168,13 @@ _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(r
 _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(loadDataSaga),
     _marked3 =
 /*#__PURE__*/
+_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(watchAndLog),
+    _marked4 =
+/*#__PURE__*/
 _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(rootSaga);
 
 /* global fetch */
+
 
 
 
@@ -1979,13 +2187,13 @@ function runClockSaga() {
       switch (_context.prev = _context.next) {
         case 0:
           _context.next = 2;
-          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__["take"])(_actions__WEBPACK_IMPORTED_MODULE_4__["actionTypes"].START_CLOCK);
+          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__["take"])(_actions__WEBPACK_IMPORTED_MODULE_5__["actionTypes"].START_CLOCK);
 
         case 2:
           if (false) {}
 
           _context.next = 5;
-          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__["put"])(Object(_actions__WEBPACK_IMPORTED_MODULE_4__["tickClock"])(false));
+          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__["put"])(Object(_actions__WEBPACK_IMPORTED_MODULE_5__["tickClock"])(false));
 
         case 5:
           _context.next = 7;
@@ -2003,59 +2211,79 @@ function runClockSaga() {
   }, _marked);
 }
 
-function loadDataSaga() {
-  var res, data;
+function loadDataSaga(data) {
+  var res;
   return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function loadDataSaga$(_context2) {
     while (1) {
       switch (_context2.prev = _context2.next) {
         case 0:
           _context2.prev = 0;
           _context2.next = 3;
-          return fetch('http://qa-admin.hxihuyu.com/bbs/bbsposts/getPostsListByIsHandpick?size=20&current=1&isHandpick=1');
+          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__["call"])(_axios_index__WEBPACK_IMPORTED_MODULE_4__["getIndexList"], data);
 
         case 3:
           res = _context2.sent;
           _context2.next = 6;
-          return res.json();
+          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__["put"])(Object(_actions__WEBPACK_IMPORTED_MODULE_5__["loadDataSuccess"])(res));
 
         case 6:
-          data = _context2.sent;
-          console.log(data);
-          _context2.next = 10;
-          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__["put"])(Object(_actions__WEBPACK_IMPORTED_MODULE_4__["loadDataSuccess"])(data));
-
-        case 10:
-          _context2.next = 16;
+          _context2.next = 12;
           break;
 
-        case 12:
-          _context2.prev = 12;
+        case 8:
+          _context2.prev = 8;
           _context2.t0 = _context2["catch"](0);
-          _context2.next = 16;
-          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__["put"])(Object(_actions__WEBPACK_IMPORTED_MODULE_4__["failure"])(_context2.t0));
+          _context2.next = 12;
+          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__["put"])(Object(_actions__WEBPACK_IMPORTED_MODULE_5__["failure"])(_context2.t0));
 
-        case 16:
+        case 12:
         case "end":
           return _context2.stop();
       }
     }
-  }, _marked2, null, [[0, 12]]);
+  }, _marked2, null, [[0, 8]]);
 }
 
-function rootSaga() {
-  return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function rootSaga$(_context3) {
+function watchAndLog(getState) {
+  var action;
+  return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function watchAndLog$(_context3) {
     while (1) {
       switch (_context3.prev = _context3.next) {
         case 0:
-          _context3.next = 2;
-          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__["all"])([Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__["call"])(runClockSaga), Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__["takeLatest"])(_actions__WEBPACK_IMPORTED_MODULE_4__["actionTypes"].LOAD_DATA, loadDataSaga)]);
+          if (false) {}
 
-        case 2:
+          _context3.next = 3;
+          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__["take"])('*');
+
+        case 3:
+          action = _context3.sent;
+          console.log('action', action); // console.log('state after', getState())
+
+          _context3.next = 0;
+          break;
+
+        case 7:
         case "end":
           return _context3.stop();
       }
     }
   }, _marked3);
+}
+
+function rootSaga() {
+  return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function rootSaga$(_context4) {
+    while (1) {
+      switch (_context4.prev = _context4.next) {
+        case 0:
+          _context4.next = 2;
+          return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__["all"])([Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__["call"])(runClockSaga), Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__["takeLatest"])(_actions__WEBPACK_IMPORTED_MODULE_5__["actionTypes"].LOAD_DATA, loadDataSaga)]);
+
+        case 2:
+        case "end":
+          return _context4.stop();
+      }
+    }
+  }, _marked4);
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (rootSaga);
@@ -2116,6 +2344,17 @@ function configureStore() {
 
 module.exports = __webpack_require__(/*! private-next-pages/_app.js */"./pages/_app.js");
 
+
+/***/ }),
+
+/***/ "axios":
+/*!************************!*\
+  !*** external "axios" ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("axios");
 
 /***/ }),
 

@@ -10,7 +10,7 @@ class Index extends React.Component {
     store.dispatch(tickClock(isServer))
 
     if (!store.getState().placeholderData) {
-      store.dispatch(loadData())
+      store.dispatch(loadData({size:20,current:1,isHandpick:1}))
     }
 
     return { isServer }

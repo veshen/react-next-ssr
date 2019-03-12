@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2714,7 +2714,11 @@ function (_React$Component) {
                 store.dispatch(Object(_actions__WEBPACK_IMPORTED_MODULE_10__["tickClock"])(isServer));
 
                 if (!store.getState().placeholderData) {
-                  store.dispatch(Object(_actions__WEBPACK_IMPORTED_MODULE_10__["loadData"])());
+                  store.dispatch(Object(_actions__WEBPACK_IMPORTED_MODULE_10__["loadData"])({
+                    size: 20,
+                    current: 1,
+                    isHandpick: 1
+                  }));
                 }
 
                 return _context.abrupt("return", {
@@ -2744,7 +2748,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

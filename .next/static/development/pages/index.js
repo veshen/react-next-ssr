@@ -15288,7 +15288,11 @@ function (_React$Component) {
                 store.dispatch(Object(_actions__WEBPACK_IMPORTED_MODULE_10__["tickClock"])(isServer));
 
                 if (!store.getState().placeholderData) {
-                  store.dispatch(Object(_actions__WEBPACK_IMPORTED_MODULE_10__["loadData"])());
+                  store.dispatch(Object(_actions__WEBPACK_IMPORTED_MODULE_10__["loadData"])({
+                    size: 20,
+                    current: 1,
+                    isHandpick: 1
+                  }));
                 }
 
                 return _context.abrupt("return", {
@@ -15318,7 +15322,7 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 2:
 /*!*************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fwangwei%2FDocuments%2Fssr-project%2Freact-next-ssr%2Fpages%2Findex.js ***!
   \*************************************************************************************************************************************************/
@@ -15341,5 +15345,5 @@ module.exports = dll_9d2e7eb3ce4bb71fa337;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]));;
+},[[2,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=index.js.map
