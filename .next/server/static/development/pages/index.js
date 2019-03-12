@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -184,7 +184,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/wangwei/Documents/next.js/examples/with-redux-saga/components/clock.js";
+var _jsxFileName = "/Users/wangwei/Documents/ssr-project/react-next-ssr/components/clock.js";
 
 
 
@@ -212,7 +212,7 @@ function Clock(_ref) {
   }, format(new Date(lastUpdate)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
     id: "1453841751",
     __self: this
-  }, "div.jsx-1453841751{padding:15px;display:inline-block;color:#82fa58;font:50px menlo,monaco,monospace;background-color:#000;}.light.jsx-1453841751{background-color:#999;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy93YW5nd2VpL0RvY3VtZW50cy9uZXh0LmpzL2V4YW1wbGVzL3dpdGgtcmVkdXgtc2FnYS9jb21wb25lbnRzL2Nsb2NrLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWVrQixBQUd3QixBQU9TLGFBTkQsU0FPdkIsWUFOZ0IsY0FDcUIsaUNBQ2Isc0JBQ3hCIiwiZmlsZSI6Ii9Vc2Vycy93YW5nd2VpL0RvY3VtZW50cy9uZXh0LmpzL2V4YW1wbGVzL3dpdGgtcmVkdXgtc2FnYS9jb21wb25lbnRzL2Nsb2NrLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0J1xuXG5jb25zdCBwYWQgPSBuID0+IChuIDwgMTAgPyBgMCR7bn1gIDogbilcblxuY29uc3QgZm9ybWF0ID0gdCA9PiB7XG4gIGNvbnN0IGhvdXJzID0gdC5nZXRVVENIb3VycygpXG4gIGNvbnN0IG1pbnV0ZXMgPSB0LmdldFVUQ01pbnV0ZXMoKVxuICBjb25zdCBzZWNvbmRzID0gdC5nZXRVVENTZWNvbmRzKClcbiAgcmV0dXJuIGAke3BhZChob3Vycyl9OiR7cGFkKG1pbnV0ZXMpfToke3BhZChzZWNvbmRzKX1gXG59XG5cbmZ1bmN0aW9uIENsb2NrICh7IGxhc3RVcGRhdGUsIGxpZ2h0IH0pIHtcbiAgcmV0dXJuIChcbiAgICA8ZGl2IGNsYXNzTmFtZT17bGlnaHQgPyAnbGlnaHQnIDogJyd9PlxuICAgICAge2Zvcm1hdChuZXcgRGF0ZShsYXN0VXBkYXRlKSl9XG4gICAgICA8c3R5bGUganN4PntgXG4gICAgICAgIGRpdiB7XG4gICAgICAgICAgcGFkZGluZzogMTVweDtcbiAgICAgICAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gICAgICAgICAgY29sb3I6ICM4MmZhNTg7XG4gICAgICAgICAgZm9udDogNTBweCBtZW5sbywgbW9uYWNvLCBtb25vc3BhY2U7XG4gICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogIzAwMDtcbiAgICAgICAgfVxuICAgICAgICAubGlnaHQge1xuICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICM5OTk7XG4gICAgICAgIH1cbiAgICAgIGB9PC9zdHlsZT5cbiAgICA8L2Rpdj5cbiAgKVxufVxuXG5leHBvcnQgZGVmYXVsdCBDbG9ja1xuIl19 */\n/*@ sourceURL=/Users/wangwei/Documents/next.js/examples/with-redux-saga/components/clock.js */"));
+  }, "div.jsx-1453841751{padding:15px;display:inline-block;color:#82fa58;font:50px menlo,monaco,monospace;background-color:#000;}.light.jsx-1453841751{background-color:#999;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy93YW5nd2VpL0RvY3VtZW50cy9zc3ItcHJvamVjdC9yZWFjdC1uZXh0LXNzci9jb21wb25lbnRzL2Nsb2NrLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWVrQixBQUd3QixBQU9TLGFBTkQsU0FPdkIsWUFOZ0IsY0FDcUIsaUNBQ2Isc0JBQ3hCIiwiZmlsZSI6Ii9Vc2Vycy93YW5nd2VpL0RvY3VtZW50cy9zc3ItcHJvamVjdC9yZWFjdC1uZXh0LXNzci9jb21wb25lbnRzL2Nsb2NrLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0J1xuXG5jb25zdCBwYWQgPSBuID0+IChuIDwgMTAgPyBgMCR7bn1gIDogbilcblxuY29uc3QgZm9ybWF0ID0gdCA9PiB7XG4gIGNvbnN0IGhvdXJzID0gdC5nZXRVVENIb3VycygpXG4gIGNvbnN0IG1pbnV0ZXMgPSB0LmdldFVUQ01pbnV0ZXMoKVxuICBjb25zdCBzZWNvbmRzID0gdC5nZXRVVENTZWNvbmRzKClcbiAgcmV0dXJuIGAke3BhZChob3Vycyl9OiR7cGFkKG1pbnV0ZXMpfToke3BhZChzZWNvbmRzKX1gXG59XG5cbmZ1bmN0aW9uIENsb2NrICh7IGxhc3RVcGRhdGUsIGxpZ2h0IH0pIHtcbiAgcmV0dXJuIChcbiAgICA8ZGl2IGNsYXNzTmFtZT17bGlnaHQgPyAnbGlnaHQnIDogJyd9PlxuICAgICAge2Zvcm1hdChuZXcgRGF0ZShsYXN0VXBkYXRlKSl9XG4gICAgICA8c3R5bGUganN4PntgXG4gICAgICAgIGRpdiB7XG4gICAgICAgICAgcGFkZGluZzogMTVweDtcbiAgICAgICAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gICAgICAgICAgY29sb3I6ICM4MmZhNTg7XG4gICAgICAgICAgZm9udDogNTBweCBtZW5sbywgbW9uYWNvLCBtb25vc3BhY2U7XG4gICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogIzAwMDtcbiAgICAgICAgfVxuICAgICAgICAubGlnaHQge1xuICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICM5OTk7XG4gICAgICAgIH1cbiAgICAgIGB9PC9zdHlsZT5cbiAgICA8L2Rpdj5cbiAgKVxufVxuXG5leHBvcnQgZGVmYXVsdCBDbG9ja1xuIl19 */\n/*@ sourceURL=/Users/wangwei/Documents/ssr-project/react-next-ssr/components/clock.js */"));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Clock);
@@ -249,7 +249,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/wangwei/Documents/next.js/examples/with-redux-saga/components/counter.js";
+var _jsxFileName = "/Users/wangwei/Documents/ssr-project/react-next-ssr/components/counter.js";
 
 
 
@@ -302,7 +302,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_7___default.a, {
         id: "2435724200",
         __self: this
-      }, "div.jsx-2435724200{padding:0 0 20px 0;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy93YW5nd2VpL0RvY3VtZW50cy9uZXh0LmpzL2V4YW1wbGVzL3dpdGgtcmVkdXgtc2FnYS9jb21wb25lbnRzL2NvdW50ZXIuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBc0JvQixBQUdnQyxtQkFDckIiLCJmaWxlIjoiL1VzZXJzL3dhbmd3ZWkvRG9jdW1lbnRzL25leHQuanMvZXhhbXBsZXMvd2l0aC1yZWR1eC1zYWdhL2NvbXBvbmVudHMvY291bnRlci5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCwgeyBDb21wb25lbnQgfSBmcm9tICdyZWFjdCdcbmltcG9ydCB7IGNvbm5lY3QgfSBmcm9tICdyZWFjdC1yZWR1eCdcblxuaW1wb3J0IHsgaW5jcmVtZW50LCBkZWNyZW1lbnQsIHJlc2V0IH0gZnJvbSAnLi4vYWN0aW9ucydcblxuY2xhc3MgQ291bnRlciBleHRlbmRzIENvbXBvbmVudCB7XG4gIGluY3JlbWVudCA9ICgpID0+IHtcbiAgICB0aGlzLnByb3BzLmRpc3BhdGNoKGluY3JlbWVudCgpKVxuICB9XG5cbiAgZGVjcmVtZW50ID0gKCkgPT4ge1xuICAgIHRoaXMucHJvcHMuZGlzcGF0Y2goZGVjcmVtZW50KCkpXG4gIH1cblxuICByZXNldCA9ICgpID0+IHtcbiAgICB0aGlzLnByb3BzLmRpc3BhdGNoKHJlc2V0KCkpXG4gIH1cblxuICByZW5kZXIgKCkge1xuICAgIGNvbnN0IHsgY291bnQgfSA9IHRoaXMucHJvcHNcbiAgICByZXR1cm4gKFxuICAgICAgPGRpdj5cbiAgICAgICAgPHN0eWxlIGpzeD57YFxuICAgICAgICAgIGRpdiB7XG4gICAgICAgICAgICBwYWRkaW5nOiAwIDAgMjBweCAwO1xuICAgICAgICAgIH1cbiAgICAgICAgYH08L3N0eWxlPlxuICAgICAgICA8aDE+XG4gICAgICAgICAgQ291bnQ6IDxzcGFuPntjb3VudH08L3NwYW4+XG4gICAgICAgIDwvaDE+XG4gICAgICAgIDxidXR0b24gb25DbGljaz17dGhpcy5pbmNyZW1lbnR9PisxPC9idXR0b24+XG4gICAgICAgIDxidXR0b24gb25DbGljaz17dGhpcy5kZWNyZW1lbnR9Pi0xPC9idXR0b24+XG4gICAgICAgIDxidXR0b24gb25DbGljaz17dGhpcy5yZXNldH0+UmVzZXQ8L2J1dHRvbj5cbiAgICAgIDwvZGl2PlxuICAgIClcbiAgfVxufVxuXG5jb25zdCBtYXBTdGF0ZVRvUHJvcHMgPSAoeyBjb3VudCB9KSA9PiAoeyBjb3VudCB9KVxuZXhwb3J0IGRlZmF1bHQgY29ubmVjdChtYXBTdGF0ZVRvUHJvcHMpKENvdW50ZXIpXG4iXX0= */\n/*@ sourceURL=/Users/wangwei/Documents/next.js/examples/with-redux-saga/components/counter.js */"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h1", {
+      }, "div.jsx-2435724200{padding:0 0 20px 0;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy93YW5nd2VpL0RvY3VtZW50cy9zc3ItcHJvamVjdC9yZWFjdC1uZXh0LXNzci9jb21wb25lbnRzL2NvdW50ZXIuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBc0JvQixBQUdnQyxtQkFDckIiLCJmaWxlIjoiL1VzZXJzL3dhbmd3ZWkvRG9jdW1lbnRzL3Nzci1wcm9qZWN0L3JlYWN0LW5leHQtc3NyL2NvbXBvbmVudHMvY291bnRlci5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCwgeyBDb21wb25lbnQgfSBmcm9tICdyZWFjdCdcbmltcG9ydCB7IGNvbm5lY3QgfSBmcm9tICdyZWFjdC1yZWR1eCdcblxuaW1wb3J0IHsgaW5jcmVtZW50LCBkZWNyZW1lbnQsIHJlc2V0IH0gZnJvbSAnLi4vYWN0aW9ucydcblxuY2xhc3MgQ291bnRlciBleHRlbmRzIENvbXBvbmVudCB7XG4gIGluY3JlbWVudCA9ICgpID0+IHtcbiAgICB0aGlzLnByb3BzLmRpc3BhdGNoKGluY3JlbWVudCgpKVxuICB9XG5cbiAgZGVjcmVtZW50ID0gKCkgPT4ge1xuICAgIHRoaXMucHJvcHMuZGlzcGF0Y2goZGVjcmVtZW50KCkpXG4gIH1cblxuICByZXNldCA9ICgpID0+IHtcbiAgICB0aGlzLnByb3BzLmRpc3BhdGNoKHJlc2V0KCkpXG4gIH1cblxuICByZW5kZXIgKCkge1xuICAgIGNvbnN0IHsgY291bnQgfSA9IHRoaXMucHJvcHNcbiAgICByZXR1cm4gKFxuICAgICAgPGRpdj5cbiAgICAgICAgPHN0eWxlIGpzeD57YFxuICAgICAgICAgIGRpdiB7XG4gICAgICAgICAgICBwYWRkaW5nOiAwIDAgMjBweCAwO1xuICAgICAgICAgIH1cbiAgICAgICAgYH08L3N0eWxlPlxuICAgICAgICA8aDE+XG4gICAgICAgICAgQ291bnQ6IDxzcGFuPntjb3VudH08L3NwYW4+XG4gICAgICAgIDwvaDE+XG4gICAgICAgIDxidXR0b24gb25DbGljaz17dGhpcy5pbmNyZW1lbnR9PisxPC9idXR0b24+XG4gICAgICAgIDxidXR0b24gb25DbGljaz17dGhpcy5kZWNyZW1lbnR9Pi0xPC9idXR0b24+XG4gICAgICAgIDxidXR0b24gb25DbGljaz17dGhpcy5yZXNldH0+6YeN572uMTIzPC9idXR0b24+XG4gICAgICA8L2Rpdj5cbiAgICApXG4gIH1cbn1cblxuY29uc3QgbWFwU3RhdGVUb1Byb3BzID0gKHsgY291bnQgfSkgPT4gKHsgY291bnQgfSlcbmV4cG9ydCBkZWZhdWx0IGNvbm5lY3QobWFwU3RhdGVUb1Byb3BzKShDb3VudGVyKVxuIl19 */\n/*@ sourceURL=/Users/wangwei/Documents/ssr-project/react-next-ssr/components/counter.js */"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h1", {
         className: "jsx-2435724200",
         __source: {
           fileName: _jsxFileName,
@@ -340,7 +340,7 @@ function (_Component) {
           lineNumber: 33
         },
         __self: this
-      }, "Reset"));
+      }, "\u91CD\u7F6E123"));
     }
   }]);
 
@@ -367,8 +367,8 @@ var mapStateToProps = function mapStateToProps(_ref) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/json/stringify */ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
@@ -377,8 +377,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _counter__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./counter */ "./components/counter.js");
 /* harmony import */ var _clock__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./clock */ "./components/clock.js");
+var _jsxFileName = "/Users/wangwei/Documents/ssr-project/react-next-ssr/components/page.js";
 
-var _jsxFileName = "/Users/wangwei/Documents/next.js/examples/with-redux-saga/components/page.js";
 
 
 
@@ -394,15 +394,17 @@ function Page(_ref) {
       placeholderData = _ref.placeholderData,
       title = _ref.title;
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-3647835756",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 16
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
+    className: "jsx-3647835756",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 17
     },
     __self: this
   }, title), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_clock__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -410,53 +412,128 @@ function Page(_ref) {
     light: light,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 18
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_counter__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 19
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("nav", {
+    className: "jsx-3647835756",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 20
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: linkTo,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 21
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    className: "jsx-3647835756",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 22
     },
     __self: this
-  }, "Navigate: ", NavigateTo))), placeholderData && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("pre", {
+  }, "Navigate: ", NavigateTo))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
+    className: "jsx-3647835756",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 25
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("code", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    },
+  }, placeholderData && placeholderData.map(function (item, index) {
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+      key: item.id,
+      className: "jsx-3647835756",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", {
+      className: "jsx-3647835756",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30
+      },
+      __self: this
+    }, item.title), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: "jsx-3647835756",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 31
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: "jsx-3647835756" + " " + "left-box",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 32
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+      src: item.dataMap.userHeadPortrait,
+      className: "jsx-3647835756",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 33
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+      className: "jsx-3647835756",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 34
+      },
+      __self: this
+    }, item.dataMap.nickName), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+      className: "jsx-3647835756",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 35
+      },
+      __self: this
+    }, item.updateTime)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: "jsx-3647835756" + " " + "right-box",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 37
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+      className: "jsx-3647835756",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 38
+      },
+      __self: this
+    }, item.pageviewInt), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+      className: "jsx-3647835756",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 39
+      },
+      __self: this
+    }, item.likenumInt))));
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    id: "3647835756",
     __self: this
-  }, _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default()(placeholderData, null, 2))), error && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+  }, "li.jsx-3647835756{list-style-type :none;width :600px;border-bottom:.026667rem solid #ddd;padding :15px 10px;}li.jsx-3647835756>div.jsx-3647835756{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content :space-between;-ms-flex-pack:justify;justify-content :space-between;}.left-box.jsx-3647835756{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-webkit-justify-content :start;-ms-flex-pack:start;justify-content :start;-webkit-align-items :center;-webkit-box-align :center;-ms-flex-align :center;align-items :center;}.left-box.jsx-3647835756 img.jsx-3647835756{width:50px;height:50px;border-radius :50%;}.left-box.jsx-3647835756 span.jsx-3647835756{margin-left:20px;}.right-box.jsx-3647835756{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-webkit-justify-content :end;-ms-flex-pack:end;justify-content :end;-webkit-align-items :center;-webkit-box-align :center;-ms-flex-align :center;align-items :center;}.right-box.jsx-3647835756 span.jsx-3647835756{margin-left:20px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy93YW5nd2VpL0RvY3VtZW50cy9zc3ItcHJvamVjdC9yZWFjdC1uZXh0LXNzci9jb21wb25lbnRzL3BhZ2UuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBOENrQixBQUdtQyxBQU1WLEFBSUEsQUFLRixBQUtPLEFBR0wsQUFLSyxXQVpOLE1BS2YsQUFRQSxLQTVCaUIsQ0FnQk0sWUFmaUIsT0FnQnhDLDZCQWZ1QixHQUlZLEFBSVIsQUFhRixnQkFwQnpCLHlFQXFCd0IsUUFiQSxvQkFKeEIscUVBa0JBLFFBYkEiLCJmaWxlIjoiL1VzZXJzL3dhbmd3ZWkvRG9jdW1lbnRzL3Nzci1wcm9qZWN0L3JlYWN0LW5leHQtc3NyL2NvbXBvbmVudHMvcGFnZS5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluaydcbmltcG9ydCB7IGNvbm5lY3QgfSBmcm9tICdyZWFjdC1yZWR1eCdcbmltcG9ydCBDb3VudGVyIGZyb20gJy4vY291bnRlcidcbmltcG9ydCBDbG9jayBmcm9tICcuL2Nsb2NrJ1xuXG5mdW5jdGlvbiBQYWdlICh7XG4gIGVycm9yLFxuICBsYXN0VXBkYXRlLFxuICBsaWdodCxcbiAgbGlua1RvLFxuICBOYXZpZ2F0ZVRvLFxuICBwbGFjZWhvbGRlckRhdGEsXG4gIHRpdGxlXG59KSB7XG4gIHJldHVybiAoXG4gICAgPGRpdj5cbiAgICAgIDxoMT57dGl0bGV9PC9oMT5cbiAgICAgIDxDbG9jayBsYXN0VXBkYXRlPXtsYXN0VXBkYXRlfSBsaWdodD17bGlnaHR9IC8+XG4gICAgICA8Q291bnRlciAvPlxuICAgICAgPG5hdj5cbiAgICAgICAgPExpbmsgaHJlZj17bGlua1RvfT5cbiAgICAgICAgICA8YT5OYXZpZ2F0ZToge05hdmlnYXRlVG99PC9hPlxuICAgICAgICA8L0xpbms+XG4gICAgICA8L25hdj5cbiAgICAgIDx1bD5cbiAgICAgICAgICB7cGxhY2Vob2xkZXJEYXRhICYmIChcbiAgICAgICAgICAgICAgcGxhY2Vob2xkZXJEYXRhLm1hcCgoaXRlbSxpbmRleCk9PntcbiAgICAgICAgICAgICAgICAgIHJldHVybihcbiAgICAgICAgICAgICAgICAgICAgICA8bGkga2V5PXtpdGVtLmlkfT5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgPGgzPntpdGVtLnRpdGxlfTwvaDM+XG4gICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImxlZnQtYm94XCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGltZyBzcmM9e2l0ZW0uZGF0YU1hcC51c2VySGVhZFBvcnRyYWl0fS8+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4+e2l0ZW0uZGF0YU1hcC5uaWNrTmFtZX08L3NwYW4+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4+e2l0ZW0udXBkYXRlVGltZX08L3NwYW4+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicmlnaHQtYm94XCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuPntpdGVtLnBhZ2V2aWV3SW50fTwvc3Bhbj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4+e2l0ZW0ubGlrZW51bUludH08L3NwYW4+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgPC9saT5cbiAgICAgICAgICAgICAgICAgIClcbiAgICAgICAgICAgICAgfSlcbiAgICAgICAgICApfVxuICAgICAgPC91bD5cbiAgICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgICAgbGl7XG4gICAgICAgICAgICBsaXN0LXN0eWxlLXR5cGUgOiBub25lO1xuICAgICAgICAgICAgd2lkdGggOiA2MDBweDtcbiAgICAgICAgICAgIGJvcmRlci1ib3R0b206IC4wMjY2NjdyZW0gc29saWQgI2RkZDtcbiAgICAgICAgICAgIHBhZGRpbmcgOiAxNXB4IDEwcHg7XG4gICAgICAgIH1cbiAgICAgICAgbGk+ZGl2e1xuICAgICAgICAgICAgZGlzcGxheTpmbGV4O1xuICAgICAgICAgICAganVzdGlmeS1jb250ZW50IDogc3BhY2UtYmV0d2VlbjtcbiAgICAgICAgfVxuICAgICAgICAubGVmdC1ib3h7XG4gICAgICAgICAgICBkaXNwbGF5OmZsZXg7XG4gICAgICAgICAgICBqdXN0aWZ5LWNvbnRlbnQgOiBzdGFydDtcbiAgICAgICAgICAgIGFsaWduLWl0ZW1zIDogY2VudGVyO1xuICAgICAgICB9XG4gICAgICAgIC5sZWZ0LWJveCBpbWd7XG4gICAgICAgICAgICB3aWR0aDo1MHB4O1xuICAgICAgICAgICAgaGVpZ2h0OjUwcHg7XG4gICAgICAgICAgICBib3JkZXItcmFkaXVzIDogNTAlO1xuICAgICAgICB9XG4gICAgICAgIC5sZWZ0LWJveCBzcGFue1xuICAgICAgICAgICAgbWFyZ2luLWxlZnQ6IDIwcHg7XG4gICAgICAgIH1cbiAgICAgICAgLnJpZ2h0LWJveHtcbiAgICAgICAgICAgIGRpc3BsYXk6ZmxleDtcbiAgICAgICAgICAgIGp1c3RpZnktY29udGVudCA6IGVuZDtcbiAgICAgICAgICAgIGFsaWduLWl0ZW1zIDogY2VudGVyO1xuICAgICAgICB9XG4gICAgICAgIC5yaWdodC1ib3ggc3BhbntcbiAgICAgICAgICAgIG1hcmdpbi1sZWZ0OiAyMHB4O1xuICAgICAgICB9XG4gICAgICBgfTwvc3R5bGU+XG4gICAgICB7ZXJyb3IgJiYgPHAgc3R5bGU9e3sgY29sb3I6ICdyZWQnIH19PkVycm9yOiB7ZXJyb3IubWVzc2FnZX08L3A+fVxuICAgIDwvZGl2PlxuICApXG59XG5cbmV4cG9ydCBkZWZhdWx0IGNvbm5lY3Qoc3RhdGUgPT4gc3RhdGUpKFBhZ2UpXG4iXX0= */\n/*@ sourceURL=/Users/wangwei/Documents/ssr-project/react-next-ssr/components/page.js */"), error && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
     style: {
       color: 'red'
     },
+    className: "jsx-3647835756",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 80
     },
     __self: this
   }, "Error: ", error.message));
@@ -2541,8 +2618,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-redux */ "react-redux");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _actions__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../actions */ "./actions.js");
-/* harmony import */ var _components_page__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/page */ "./components/page.js");
+/* harmony import */ var next_server_head__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! next-server/head */ "next-server/head");
+/* harmony import */ var next_server_head__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(next_server_head__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _actions__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../actions */ "./actions.js");
+/* harmony import */ var _components_page__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/page */ "./components/page.js");
 
 
 
@@ -2550,7 +2629,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/wangwei/Documents/next.js/examples/with-redux-saga/pages/index.js";
+var _jsxFileName = "/Users/wangwei/Documents/ssr-project/react-next-ssr/pages/index.js";
+
 
 
 
@@ -2570,21 +2650,53 @@ function (_React$Component) {
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(Index, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      this.props.dispatch(Object(_actions__WEBPACK_IMPORTED_MODULE_9__["startClock"])());
+      this.props.dispatch(Object(_actions__WEBPACK_IMPORTED_MODULE_10__["startClock"])());
     }
   }, {
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_page__WEBPACK_IMPORTED_MODULE_10__["default"], {
-        title: "Index Page",
-        linkTo: "/other",
-        NavigateTo: "Other Page",
+      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 24
         },
         __self: this
-      });
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_server_head__WEBPACK_IMPORTED_MODULE_9___default.a, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("title", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26
+        },
+        __self: this
+      }, "My page title"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("meta", {
+        name: "viewport",
+        content: "initial-scale=1.0, width=device-width",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29
+        },
+        __self: this
+      }, "Hello world!"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_page__WEBPACK_IMPORTED_MODULE_11__["default"], {
+        title: "Index Page123123",
+        linkTo: "/about",
+        NavigateTo: "about Page",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        },
+        __self: this
+      }));
     }
   }], [{
     key: "getInitialProps",
@@ -2599,10 +2711,10 @@ function (_React$Component) {
             switch (_context.prev = _context.next) {
               case 0:
                 _props$ctx = props.ctx, store = _props$ctx.store, isServer = _props$ctx.isServer;
-                store.dispatch(Object(_actions__WEBPACK_IMPORTED_MODULE_9__["tickClock"])(isServer));
+                store.dispatch(Object(_actions__WEBPACK_IMPORTED_MODULE_10__["tickClock"])(isServer));
 
                 if (!store.getState().placeholderData) {
-                  store.dispatch(Object(_actions__WEBPACK_IMPORTED_MODULE_9__["loadData"])());
+                  store.dispatch(Object(_actions__WEBPACK_IMPORTED_MODULE_10__["loadData"])());
                 }
 
                 return _context.abrupt("return", {
@@ -2632,14 +2744,14 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/wangwei/Documents/next.js/examples/with-redux-saga/pages/index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! /Users/wangwei/Documents/ssr-project/react-next-ssr/pages/index.js */"./pages/index.js");
 
 
 /***/ }),
@@ -2784,6 +2896,17 @@ module.exports = require("next-server/dist/lib/router/router");
 /***/ (function(module, exports) {
 
 module.exports = require("next-server/dist/lib/utils");
+
+/***/ }),
+
+/***/ "next-server/head":
+/*!***********************************!*\
+  !*** external "next-server/head" ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next-server/head");
 
 /***/ }),
 

@@ -1767,7 +1767,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/wangwei/Documents/next.js/examples/with-redux-saga/pages/_app.js";
+var _jsxFileName = "/Users/wangwei/Documents/ssr-project/react-next-ssr/pages/_app.js";
 
 
 
@@ -1884,7 +1884,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var exampleInitialState = {
-  count: 0,
+  count: 10,
   error: false,
   lastUpdate: 0,
   light: false,
@@ -1918,7 +1918,7 @@ function reducer() {
 
     case _actions__WEBPACK_IMPORTED_MODULE_1__["actionTypes"].LOAD_DATA_SUCCESS:
       return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, state, {
-        placeholderData: action.data
+        placeholderData: action.data.data.records
       });
 
     case _actions__WEBPACK_IMPORTED_MODULE_1__["actionTypes"].TICK_CLOCK:
@@ -2011,7 +2011,7 @@ function loadDataSaga() {
         case 0:
           _context2.prev = 0;
           _context2.next = 3;
-          return fetch('https://jsonplaceholder.typicode.com/users');
+          return fetch('http://qa-admin.hxihuyu.com/bbs/bbsposts/getPostsListByIsHandpick?size=20&current=1&isHandpick=1');
 
         case 3:
           res = _context2.sent;
@@ -2020,25 +2020,26 @@ function loadDataSaga() {
 
         case 6:
           data = _context2.sent;
-          _context2.next = 9;
+          console.log(data);
+          _context2.next = 10;
           return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__["put"])(Object(_actions__WEBPACK_IMPORTED_MODULE_4__["loadDataSuccess"])(data));
 
-        case 9:
-          _context2.next = 15;
+        case 10:
+          _context2.next = 16;
           break;
 
-        case 11:
-          _context2.prev = 11;
+        case 12:
+          _context2.prev = 12;
           _context2.t0 = _context2["catch"](0);
-          _context2.next = 15;
+          _context2.next = 16;
           return Object(redux_saga_effects__WEBPACK_IMPORTED_MODULE_1__["put"])(Object(_actions__WEBPACK_IMPORTED_MODULE_4__["failure"])(_context2.t0));
 
-        case 15:
+        case 16:
         case "end":
           return _context2.stop();
       }
     }
-  }, _marked2, null, [[0, 11]]);
+  }, _marked2, null, [[0, 12]]);
 }
 
 function rootSaga() {

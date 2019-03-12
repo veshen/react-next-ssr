@@ -1,7 +1,7 @@
 import { actionTypes } from './actions'
 
 export const exampleInitialState = {
-  count: 0,
+  count: 10,
   error: false,
   lastUpdate: 0,
   light: false,
@@ -37,7 +37,7 @@ function reducer (state = exampleInitialState, action) {
     case actionTypes.LOAD_DATA_SUCCESS:
       return {
         ...state,
-        ...{ placeholderData: action.data }
+        ...{ placeholderData: action.data.data.records }
       }
 
     case actionTypes.TICK_CLOCK:

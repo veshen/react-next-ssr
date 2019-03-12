@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-
+import Head from 'next/head'
 import { loadData, startClock, tickClock } from '../actions'
 import Page from '../components/page'
 
@@ -21,7 +21,15 @@ class Index extends React.Component {
   }
 
   render () {
-    return <Page title='Index Page' linkTo='/other' NavigateTo='Other Page' />
+    return <div>
+    <Head>
+      <title>My page title</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    </Head>
+    <p>Hello world!</p>
+    <Page title='Index Page123123' linkTo='/about' NavigateTo='about Page' />
+  </div>
+
   }
 }
 

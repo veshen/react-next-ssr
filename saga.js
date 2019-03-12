@@ -18,8 +18,9 @@ function * runClockSaga () {
 
 function * loadDataSaga () {
   try {
-    const res = yield fetch('https://jsonplaceholder.typicode.com/users')
+    const res = yield fetch('http://qa-admin.hxihuyu.com/bbs/bbsposts/getPostsListByIsHandpick?size=20&current=1&isHandpick=1')
     const data = yield res.json()
+    console.log(data);
     yield put(loadDataSuccess(data))
   } catch (err) {
     yield put(failure(err))
