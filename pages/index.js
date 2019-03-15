@@ -21,13 +21,25 @@ class Index extends React.Component {
   }
 
   render () {
-    return <div>
+    return <div className='container'>
     <Head>
       <title>My page title</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
-    <p>Hello world!</p>
+    <h1 className="title">Hello world!</h1>
     <Page title='Index Page123123' linkTo='/about' NavigateTo='about Page' />
+        <style jsx>{`
+            .title{
+                color : yellow;
+            }
+          .container{
+              background : red;
+          }
+          *{
+              margin : 0;
+              padding : 0;
+          }
+        `}</style>
   </div>
 
   }
