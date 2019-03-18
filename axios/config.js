@@ -12,4 +12,4 @@ const HOST                      = 'http://qa-admin.hxihuyu.com/';
 */
 
 //获取首页列表
-export const INDEX_LIST = HOST + 'bbs/bbsposts/getPostsListByIsHandpick?size=20&current=1&isHandpick=1';
+export const INDEX_LIST = HOST + 'bbs/bbsposts/getPostsListByIsHandpick';

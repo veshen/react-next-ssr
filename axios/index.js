@@ -19,4 +19,4 @@ export const getIndexList = (data) => get({url:config.INDEX_LIST,data});   //首
 // export const exportOrderQueryInterval = (data) => postExport({
 //     url: config.ORDER_INTERVAL_EXPORT,
 //     data
-// }); //订单查询查询导出
+// }); //订单查询查询导出 添加注释 进行插件测试

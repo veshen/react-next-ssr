@@ -98,7 +98,7 @@ var HOST = 'http://qa-admin.hxihuyu.com/';
 */
 //获取首页列表
 
-var INDEX_LIST = HOST + 'bbs/bbsposts/getPostsListByIsHandpick?size=20&current=1&isHandpick=1';
+var INDEX_LIST = HOST + 'bbs/bbsposts/getPostsListByIsHandpick';
 
 /***/ }),
 
@@ -139,7 +139,7 @@ var getIndexList = function getIndexList(data) {
 // export const exportOrderQueryInterval = (data) => postExport({
 //     url: config.ORDER_INTERVAL_EXPORT,
 //     data
-// }); //订单查询查询导出
+// }); //订单查询查询导出 添加注释 进行插件测试
 
 /***/ }),
 
@@ -17546,7 +17546,7 @@ exports.devToolsEnhancer = (
 /*!***********************************************************************!*\
   !*** ./node_modules/redux-saga/dist/redux-saga-core-npm-proxy.esm.js ***!
   \***********************************************************************/
-/*! exports provided: default, CANCEL, SAGA_LOCATION, buffers, detach, runSaga, END, isEnd, eventChannel, channel, multicastChannel, stdChannel */
+/*! exports provided: CANCEL, SAGA_LOCATION, buffers, detach, runSaga, END, isEnd, eventChannel, channel, multicastChannel, stdChannel, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
