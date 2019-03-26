@@ -3,11 +3,13 @@ import React from 'react'
 import { Provider } from 'react-redux'
 import withRedux from 'next-redux-wrapper'
 import withReduxSaga from 'next-redux-saga'
-
+import { ServerStyleSheet } from 'styled-components'
 import createStore from '../store'
 
 class MyApp extends App {
   static async getInitialProps ({ Component, ctx }) {
+    const sheet = new ServerStyleSheet()
+    const originalRenderPage = ctx.renderPage
     let pageProps = {}
 
     if (Component.getInitialProps) {
